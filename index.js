@@ -11,12 +11,22 @@ for(b of buttons){
             screenValue+=buttonText;
             screen.value=screenValue;
         }
+        if(buttonText=="< <"){
+            buttonText="<<";
+            screenValue+=buttonText;
+            screen.value=screenValue;
+        }
         else if(buttonText=="C"){
             screenValue="";
             screen.value=screenValue;
         }
         else if(buttonText=="="){
-            screen.value=eval(screenValue);
+            screenValue=eval(screenValue);
+            screen.value=screenValue;
+        }    
+        else if(buttonText=="x"){
+            screenValue=screenValue.substring(0,screenValue.length-1);
+            screen.value=screenValue;
         }
         else{
             screenValue+=buttonText;
