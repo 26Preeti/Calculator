@@ -11,7 +11,7 @@ for(b of buttons){
             screenValue+=buttonText;
             screen.value=screenValue;
         }
-        if(buttonText=="< <"){
+        else if(buttonText=="< <"){
             buttonText="<<";
             screenValue+=buttonText;
             screen.value=screenValue;
